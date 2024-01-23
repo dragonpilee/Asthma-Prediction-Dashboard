@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Predictor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #007bff;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Asthma Predictor</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Select CSV file:</label>
+                <input type="file" name="file" id="file" class="form-control-file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>

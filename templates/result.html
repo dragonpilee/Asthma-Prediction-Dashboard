@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthma Predictor - Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            color: #28a745;
+        }
+        table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Analysis Results</h1>
+        <p class="lead text-center">Accuracy: {{ result['accuracy'] }}</p>
+        {{ result['prediction_data'] | safe }}
+    </div>
+</body>
+</html>
